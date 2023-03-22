@@ -27,6 +27,7 @@ html {
 body{
     background-color: var(--app-dark-bg);
 }
+
 /* HEADER */
 header{
     height: 65px;
@@ -39,6 +40,7 @@ header{
     width: 50px;
     margin: auto 0;
     cursor: pointer;
+   
   }
 
   .img-icon img {
@@ -48,7 +50,7 @@ header{
 h1{
     font-size: 48px;
     text-transform: uppercase;
-    color: var(--app-blue);
+    color: var(--app-green);
     font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 0.2px;
@@ -97,10 +99,12 @@ nav ul {
   nav ul li a:hover::after {
     width: 50%;
   }
+
   nav ul li + li {
     margin-left: 20px;
   }
 
+/* --MAIN-- */
 
 .inputs {
     width: 700px;
@@ -114,7 +118,7 @@ nav ul {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#post-txt {
+.post-txt {
   letter-spacing: 0.5px;
   font-size: 18px;
   padding: 10px;
@@ -134,7 +138,7 @@ nav ul {
   width: 100px;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #1D9BF0;
+  background-color: var(--app-green);
   font-size: 17px;
   color: #fff;
   cursor: pointer;
@@ -144,7 +148,11 @@ nav ul {
   border: 1px solid #000;
 }
 
-/* Posts area */
+span {
+  font-size: 16px;
+  color: var(--app-grey);
+}
+
 .grid {
   min-height: 350px;
   width: 1050px;
@@ -161,21 +169,76 @@ nav ul {
   min-height: 110px;
   height: fit-content;
   padding: 10px;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--app-light-white);
+  background-color: var(--app-grey);
   border-radius: 5px;
 }
+
+.postHead {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.postHead span{
+  font-size: 22px;
+  font-weight:600;
+  color: var(--app-dark-bg);
+}
+.postHead p {
+  font-size: 18px;
+  
+  color: var(--app-dark-bg);
+}
+
+.postHead img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.postBody {
+  margin: 15px 0 11px;
+  color: var(--app-dark-bg);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 8px;
+}
+
+
 #postFile {
   display: none;
 }
 
 .postFile {
   padding-top: 8px;
-  color: #C1C0C5;
+  color: var(--app-grey);
   cursor: pointer;
 }
 
 .postFile i {
   font-size: 30px;
   margin-right: 10px;
+}
+
+.img-icon:focus .Change {
+  display: block;
+}
+
+.img-icon .Change {
+  display: none;
+  position: relative;
+  background-color: #3c3f4b;
+  padding: 10px;
+  min-width: 260px;
+  top: 20px;
+  right: 100px;
+  z-index: 1;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
 }

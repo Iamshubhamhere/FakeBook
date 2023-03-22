@@ -12,14 +12,11 @@
   <link rel="Shortcut icon" href="./assets/images/imposter.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Nunito:wght@200&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
 </head>
-<body>
+<body data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
     <header class="container flex">
         <h1>FakeBook</h1>
         <nav>
@@ -31,30 +28,26 @@
                 <li><a href="#">Settings</a></li>
             </ul>
         </nav>
-        <div class="img-icon">
+        <div class="img-icon" >
             <img src="./assets/images/Icon.png" title="icon">
+            <div class="Change"></div>
         </div>
     </header>
     <main>
         <div class="container">
             <div class="inputs">
-                <textarea name="post" id="post-txt" rows="5" placeholder="What's New?"></textarea>
+                <textarea name="post" class="post-txt" rows="5" placeholder="What's on your mind?"></textarea>
                 <div class="center2">
-                    <label for="post-file" class="postFile"><i class="fa-sharp fa-solid fa-image"></i></label>
+                    <label for="postFile" class="postFile">
+                        <i class="fa-sharp fa-solid fa-image"></i>
+                         <span class="inputName"></span>
+                    </label>
                     <input type="file" name="post" id="postFile" accept=" image/jpeg, image/png">
                     <button id="post">Post</button>
                 </div>
             </div>
             <div class="grid">
-                <!-- <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div> -->
+             
             </div>
         </div>
     </main>
