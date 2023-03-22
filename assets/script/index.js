@@ -58,6 +58,18 @@ class Subscriber extends User {
     }
 };
 
+const mainUser = new Subscriber('01', 'Shubham', 'Iamshubhamhere',
+    'shubham11729@gmail.com', ['WEB DEVELOPMENT', 'ANIME PRODUCTION'], ['MTT'], true);
+
+iconInfo.innerText = mainUser.getInfo();
+
+icon.addEventListener('mouseover', () => {
+    iconInfo.style.display = 'block';
+});
+
+icon.addEventListener('mouseout', () => {
+    iconInfo.style.display = 'none';
+});
 
 
 postFile.addEventListener('input', function () {
